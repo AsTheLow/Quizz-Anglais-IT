@@ -1,5 +1,6 @@
 # Script QCM interactif Python
-
+import random
+# Liste des questions
 questions = [
     {"question": "1. Quelle est la traduction de 'Infrastructure de systèmes' en anglais ?",
      "options": ["a. System infrastructure", "b. Système infrastructure", "c. Systemes infrastructure", "d. Systems infrastructure"],
@@ -25,8 +26,8 @@ questions = [
      "answer": "d", "full_answer": "Rootkit"},
 
     {"question": "6. Quelle est la traduction de 'Système de messagerie collaborative' en anglais ?",
-     "options": ["a. Collaboration mailing system", "b. Collaborative message system", "c. Collaborative messageries system", "d. Collaboration messaging system"],
-     "answer": "b", "full_answer": "Collaborative message system"},
+     "options": ["a. Collaboration mailing system", "b. Collaborative message system", "c. Collaborative messageries system", "d. Collaborative messaging system"],
+     "answer": "d", "full_answer": "Collaborative messaging system"},
 
     {"question": "7. Quelle est la traduction de 'Mettre à niveau les logiciels et le matériel obsolètes' en anglais ?",
      "options": ["a. Get to the level obsolete software and hardware",
@@ -410,7 +411,7 @@ questions = [
                  "d. Be in measure to manage a list of problems or ameliorations"],
      "answer": "b", "full_answer": "Be able to manage a list of issues or improvements"},
 
-    {"question": "93. Quelle est la traduction de 'Réinitialiser' en anglais ?",
+    {"question": "93. Quelle est la traduction de 'Redémarrer' en anglais ?",
      "options": ["a. To reboot", "b. To reinitiate", "c. To reinstall", "d. To reinitialise"],
      "answer": "a", "full_answer": "To reboot"},
 
@@ -532,7 +533,7 @@ questions = [
      "options": ["a. Data recovering", "b. Data recovery", "c. Data restauration", "d. Data recovers"],
      "answer": "b", "full_answer": "Data recovery"},
 
-    {"question": "120. Quelle est la traduction de 'Bureau d'assistance' en anglais ?",
+    {"question": "120. Quelle est la traduction de 'Service d'assistance' en anglais ?",
      "options": ["a. Aid office", "b. Assistance office", "c. Assistance desk", "d. Help desk"],
      "answer": "d", "full_answer": "Help desk"},
 
@@ -564,19 +565,70 @@ questions = [
 
 ]
 
-score = 0
+# Liste globale pour stocker les questions ratées
+questions_fausses = []
 
-for q in questions:
-    print(q["question"])
-    for opt in q["options"]:
-        print(opt)
-    
-    user_answer = input("Votre réponse (a/b/c/d) : ").lower()
-    
-    if user_answer == q["answer"]:
-        print("✅ Correct ! +1 point\n")
-        score += 1
+def run_quiz(selected_questions, memorize_mistakes=True):
+    score = 0
+    global questions_fausses
+    for q in selected_questions:
+        print(q["question"])
+        for opt in q["options"]:
+            print(opt)
+        
+        user_answer = input("Votre réponse (a/b/c/d) : ").lower()
+        
+        if user_answer == q["answer"]:
+            print("✅ Correct ! +1 point\n")
+            score += 1
+        else:
+            print(f"❌ Faux. La bonne réponse est {q['answer']} ***{q['full_answer']}***\n")
+            if memorize_mistakes and q not in questions_fausses:
+                questions_fausses.append(q)
+                
+    print(f"Votre score final est {score} / {len(selected_questions)}\n")
+
+def quiz_entier():
+    run_quiz(questions)
+
+def quiz_aleatoire(n):
+    if n > len(questions):
+        n = len(questions)
+    selected_questions = random.sample(questions, n)
+    run_quiz(selected_questions)
+
+def quiz_faux():
+    if questions_fausses:
+        print("Vous allez refaire uniquement les questions que vous avez ratées précédemment !")
+        run_quiz(questions_fausses, memorize_mistakes=False)
+        # On vide la liste après le passage pour ne pas répéter les mêmes
+        questions_fausses.clear()
     else:
-        print(f"❌ Faux. La bonne réponse est {q['answer']} ***{q['full_answer']}***\n")
+        print("Bravo ! Vous n'avez aucune question incorrecte à réviser.\n")
 
-print(f"Votre score final est {score} / {len(questions)}")
+# Menu interactif
+def menu():
+    while True:
+        print("Bienvenue au QCM interactif !")
+        print("1. Faire le test complet")
+        print("2. Faire un quiz aléatoire")
+        print("3. Refaire uniquement les questions ratées")
+        print("4. Quitter")
+        
+        choix = input("Votre choix (1/2/3/4) : ")
+        
+        if choix == "1":
+            quiz_entier()
+        elif choix == "2":
+            nb = int(input(f"Combien de questions voulez-vous ? (max {len(questions)}) : "))
+            quiz_aleatoire(nb)
+        elif choix == "3":
+            quiz_faux()
+        elif choix == "4":
+            print("Merci d'avoir utilisé le QCM interactif !")
+            break
+        else:
+            print("Choix invalide.\n")
+
+# Lancer le menu
+menu()
