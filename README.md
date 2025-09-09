@@ -1,71 +1,84 @@
-# Quiz Mots et Traductions – 1ère année
+QCM Interactif Python
+=====================
 
-Ce projet est un **script Python interactif** destiné aux étudiants de première année pour **s’entraîner sur le vocabulaire informatique** (traductions et définitions anglaises).  
+Un petit programme Python pour s’entraîner à des questions à choix multiples (QCM). 
+Il permet de : 
+- Faire le quiz complet
+- Faire un quiz aléatoire de n questions
+- Refaire uniquement les questions ratées pour réviser
 
-Le quiz contient **125 questions** couvrant la traduction de termes, définitions et concepts informatiques courants.
+Fonctionnalités
+---------------
 
----
+1. Quiz complet
+   - Parcourt toutes les questions de la liste.
+   - Affiche votre score final à la fin.
 
-## Objectif
+2. Quiz aléatoire
+   - Permet de choisir un nombre n de questions au hasard.
+   - Affiche votre score final à la fin.
 
-- Réviser les traductions des termes informatiques de français vers l’anglais.
-- Apprendre les définitions anglaises des concepts informatiques.
-- Obtenir un **score automatique** à la fin du quiz.
+3. Questions ratées
+   - Les questions auxquelles vous avez répondu incorrectement sont mémorisées.
+   - Vous pouvez refaire uniquement ces questions pour vous entraîner.
 
----
+4. Menu interactif
+   - Choisissez l’action à effectuer depuis un menu clair.
+   - Le programme continue de tourner jusqu’à ce que vous décidiez de quitter.
 
-## Contenu
+Comment l’utiliser
+------------------
 
-- `quiz.py` : Script Python contenant toutes les questions et la logique interactive.
-- Les questions, options et réponses correctes sont intégrées dans le script.
-- Le quiz est interactif : l’utilisateur choisit entre **a, b, c ou d** pour chaque question et reçoit un feedback immédiat avec le score.
+1. Exécuter le script
+   python qcm_interactif.py
 
----
+2. Choisir une option dans le menu :
+   1. Faire le test complet
+   2. Faire un quiz aléatoire
+   3. Refaire uniquement les questions ratées
+   4. Quitter
 
-## Comment lancer le script
+3. Répondre aux questions
+   - Tapez a, b, c ou d pour répondre.
+   - Le script vous dira immédiatement si vous avez répondu correctement 
+     et affichera la bonne réponse si vous vous êtes trompé.
 
-1. Assurez-vous d’avoir Python installé (version 3.7 ou supérieure recommandée).
-2. Téléchargez le fichier `quiz.py`.
-3. Ouvrez un terminal ou une console.
-4. Placez-vous dans le dossier contenant le fichier `quiz.py`.
-5. Lancez le script avec la commande :
+4. Réviser les erreurs
+   - Les questions ratées sont stockées automatiquement.
+   - En choisissant l’option 3 du menu, vous pouvez les refaire pour vérifier si vous avez appris.
 
-```bash
-python quiz.py
-```
+Personnalisation
+----------------
 
-6. Suivez les instructions à l’écran :  
-   - Tapez **a, b, c ou d** pour répondre à chaque question.
-   - Après chaque réponse, le script vous indiquera si vous avez **juste ou faux**, avec la réponse correcte.
-   - À la fin, le score total sera affiché.
+- Ajouter des questions :
+  Les questions sont stockées dans une liste "questions". Chaque question est un dictionnaire avec les champs :
 
----
+  {
+      "question": "Texte de la question",
+      "options": ["a. option1", "b. option2", "c. option3", "d. option4"],
+      "answer": "a",  # lettre de la bonne réponse
+      "full_answer": "Réponse complète correcte"
+  }
 
-## Exemple d’utilisation
+- Modifier le nombre maximum de questions aléatoires :
+  Le script limite automatiquement le nombre choisi au nombre total de questions disponibles.
 
-```
-Question 1: Quelle est la traduction de "Infrastructure de systèmes" en anglais ?
+Exemple de fonctionnement
+-------------------------
+
+Bienvenue au QCM interactif !
+1. Faire le test complet
+2. Faire un quiz aléatoire
+3. Refaire uniquement les questions ratées
+4. Quitter
+Votre choix (1/2/3/4) : 1
+
+1. Quelle est la traduction de 'Infrastructure de systèmes' en anglais ?
 a. System infrastructure
 b. Système infrastructure
 c. Systemes infrastructure
 d. Systems infrastructure
+Votre réponse (a/b/c/d) : a
+✅ Correct ! +1 point
 
-Votre réponse: a
-Correct! +1 point
-
-...
-
-Votre score final: 112/125
-```
-
----
-
-## Remarques
-
-- Ce quiz est destiné à un usage **personnel ou académique**.
-- Vous pouvez **ajouter de nouvelles questions** en suivant la structure des dictionnaires dans `quiz.py`.
-- Les réponses correctes sont **précisées dans le feedback** pour faciliter l’apprentissage.
-
----
-
-Bonne révision et bon apprentissage ! 🎓
+Votre score final est 1 / 1
