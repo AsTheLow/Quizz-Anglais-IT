@@ -561,7 +561,107 @@ questions = [
                  "b. Plug in different devices fast and effective networks",
                  "c. Put together fast and efficient networks to make different devices",
                  "d. Connect different devices together to form fast and efficient networks"],
-     "answer": "d", "full_answer": "Connect different devices together to form fast and efficient networks"}
+     "answer": "d", "full_answer": "Connect different devices together to form fast and efficient networks"}, 
+
+    {"question": "126. A quel mot anglais correspond : Business strategy tool that determines the options available in a strategic area of activity (Strengths, Weaknesses, Opportunities and Threats) ?", 
+    "options": ["a. Gap analysis", "b. Risk mapping", "c. Value chain", "d. SWOT analysis"], 
+    "answer": "d", "full_answer": "SWOT analysis"}, 
+
+    {"question": "127. A quel mot anglais correspond : The purpose of an organization's master plan is to provide strategic directions in a forward-looking manner in order to roughly define the articulation of the achievement of the main objectives over time. It thus allows to set priorities in terms of achieving the objectives and to give visibility on the ambitions of the organization ?", 
+    "options": ["a. Master plan", "b. Strategic roadmap", "c. Balanced scorecard", "d. Business vision"], 
+    "answer": "a", "full_answer": "Master plan"}, 
+
+    {"question": "128. A quel mot anglais correspond : Graphic representation of an organization's processes. It highlights the link between the tasks that make up the process and their sequence ?", 
+    "options": ["a. Work breakdown structure", "b. Process mapping", "c. Swimlane diagram", "d. Organizational chart"], 
+    "answer": "b", "full_answer": "Process mapping"}, 
+
+    {"question": "129. A quel mot anglais correspond : Service-oriented architecture is a software development model based on distributed application components with discovery, access control, data mapping and security features ?", 
+    "options": ["a. Event-driven architecture", "b. Agile design", "c. Service-oriented architecture (SOA)", "d. Cloud-native model"], 
+    "answer": "c", "full_answer": "Service-oriented architecture (SOA)"}, 
+
+    {"question": "130. A quel mot anglais correspond : A cloud service model where the user can access an app directly in rental mode ?", 
+    "options": ["a. Desktop as a service (DaaS)", "b. Platform as a service (PaaS)", "c. Software as a service (SaaS)", "d. Infrastructure as a service (IaaS)"], 
+    "answer": "c", "full_answer": "Software as a service (SaaS)"}, 
+
+    {"question": "131. A quel mot anglais correspond : The use case corresponds to a set of actions carried out by the system in interaction with the actors for a purpose ?", 
+    "options": ["a. Workflow", "b. Use case", "c. Scenario", "d. Process model"], 
+    "answer": "b", "full_answer": "Use case"}, 
+
+    {"question": "132. A quel mot anglais correspond : The scope statement or specifications is a document that defines the framing of a project as a whole. Needs, objectives, constraints, expected functionalities, deadlines and budget are formalized in the most accurate way possible ?", 
+    "options": ["a. Project charter", "b. Scope statement", "c. Requirements baseline", "d. Feasibility study"], 
+    "answer": "b", "full_answer": "Scope statement"}, 
+
+    {"question": "133. A quel mot anglais correspond : A milestone, in project management, is the end of a stage, the end of a job ?", 
+    "options": ["a. Milestone", "b. Sprint", "c. Deliverable", "d. Task"], 
+    "answer": "a", "full_answer": "Milestones"}, 
+
+    {"question": "134. A quel mot anglais correspond : A critical path refers to the orderly list of operations necessary to achieve the desired result, the total duration of which gives the duration of the project ?", 
+    "options": ["a. Program evaluation and review technique (PERT)", "b. Critical path method (CPM)", "c. Gantt chart", "d. Dependency matrix"], 
+    "answer": "b", "full_answer": "Critical path method (CPM)"}, 
+
+    {"question": "135. A quel mot anglais correspond : The purpose of project progress monitoring (or follow-up of project tasks or activities) is to ensure that the project is proceeding in accordance with the established schedule and that human, material and financial resources are well defined and used wisely ?", 
+    "options": ["a. Resource leveling", "b. Earned value analysis", "c. Status reporting", "d. Project progress monitoring"], 
+    "answer": "d", "full_answer": "Project progress monitoring"}, 
+
+    {"question": "136. A quel mot anglais correspond : A stakeholder is a group of individuals who can influence or be influenced by the achievement of a company's goals ?", 
+    "options": ["a. Stakeholders", "b. Partners", "c. Shareholders", "d. Sponsors"], 
+    "answer": "a", "full_answer": "Stakeholders"}, 
+
+    {"question": "137. A quel mot anglais correspond : A steering committee is the group of executives responsible for ensuring the smooth running of a project within a company ?", 
+    "options": ["a. Project board", "b. Steering committee", "c. Governance team", "d. Management group"], 
+    "answer": "b", "full_answer": "Steering committee"}, 
+
+    {"question": "138. A quel mot anglais correspond : An invitation to tender is a formal, structured procedure for generating competing offers from different potential suppliers or contractors ?", 
+    "options": ["a. Call for bids", "b. Proposal request", "c. Invitation to tender (ITT)", "d. Contract notice"], 
+    "answer": "c", "full_answer": "Invitation to tender (ITT)"}, 
+
+    {"question": "139. A quel mot anglais correspond : Based on functional analysis, this technique allows to optimize choices from an economic perspective in order to limit itself to the necessary and to focus on the real needs of the customer ?", 
+    "options": ["a. Functional design", "b. Value analysis", "c. Cost reduction", "d. Lean method"], 
+    "answer": "b", "full_answer": "Value analysis"}, 
+
+    {"question": "140. A quel mot anglais correspond : A hazard is the unpredictable turn that an event can take ?", 
+    "options": ["a. Hazard", "b. Threat", "c. Risk", "d. Issue"], 
+    "answer": "a", "full_answer": "Hazard"}, 
+
+    {"question": "141. A quel mot anglais correspond : A mock-up is a partial or complete representation of a system or object (existing or in project) in order to test and validate certain aspects and/or behavior (functional model) ?", 
+    "options": ["a. Mock-up", "b. Prototype", "c. Blueprint", "d. Simulation"], 
+    "answer": "a", "full_answer": "Mock-up"}, 
+
+    {"question": "142. A quel mot anglais correspond : Organizational Breakdown Structure (OBS) is a diagram that represents the responsibilities of each member for each task of a project ?", 
+    "options": ["a. Organizational chart", "b. Work breakdown structure", "c. Organizational Breakdown Structure (OBS)", "d. RACI matrix"], 
+    "answer": "c", "full_answer": "Organizational Breakdown Structure (OBS)"}, 
+
+    {"question": "143. A quel mot anglais correspond : An endorsement is an act by which an act in progress is amended by correcting, removing, or adding certain provisions ?", 
+    "options": ["a. Validation", "b. Endorsement", "c. Amendment", "d. Approval"], 
+    "answer": "b", "full_answer": "Endorsement"}, 
+
+    {"question": "144. A quel mot anglais correspond : The project is reviewed with the entire team at several stages of the project, through intermediate evaluations and a final assessment ?", 
+    "options": ["a. Project assessment", "b. Project review", "c. Audit", "d. Lessons learned"], 
+    "answer": "a", "full_answer": "Project assessment"}, 
+
+    {"question": "145. A quel mot anglais correspond : A learning organization is a human organization (business, administration, etc.) that implements a set of practices and arrangements to keep up with its ecosystem ?", 
+    "options": ["a. Adaptive enterprise", "b. Smart business", "c. Learning organization", "d. Agile organization"], 
+    "answer": "c", "full_answer": "Learning organization"}, 
+
+    {"question": "146. A quel mot anglais correspond : The supply chain represents the entire network that allows the delivery of products or services from raw materials to end customers ?", 
+    "options": ["a. Value chain", "b. Logistics flow", "c. Supply chain", "d. Distribution system"], 
+    "answer": "c", "full_answer": "Supply chain"}, 
+
+    {"question": "147. A quel mot anglais correspond : Technological watch or scientific and technical watch consists of systematic information about the latest techniques and especially about their commercial availability ?", 
+    "options": ["a. Competitive intelligence", "b. Technological watch", "c. Innovation scouting", "d. R&D monitoring"], 
+    "answer": "b", "full_answer": "Technological watch"}, 
+
+    {"question": "148. A quel mot anglais correspond : VUCA is an acronym used to describe or question volatility, uncertainty, complexity and ambiguity of conditions and situations ?", 
+    "options": ["a. SWOT", "b. VUCA", "c. PESTEL", "d. Agile"], 
+    "answer": "b", "full_answer": "VUCA"}, 
+
+    {"question": "149. A quel mot anglais correspond : Change management is the set of operations carried out within an organization to enable it to adapt to change and change in the environment ?", 
+    "options": ["a. Transformation process", "b. Change management", "c. Transition planning", "d. Organizational shift"], 
+    "answer": "b", "full_answer": "Change management"}, 
+
+    {"question": "150. A quel mot anglais correspond : The organizational structure of an organization is all its rules for the distribution of authority, tasks, control and coordination ?", 
+    "options": ["a. Organizational framework", "b. Corporate governance", "c. Organizational structure", "d. Management hierarchy"], 
+    "answer": "c", "full_answer": "Organizational structure"}
 
 ]
 
