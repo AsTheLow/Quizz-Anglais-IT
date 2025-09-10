@@ -563,7 +563,7 @@ questions = [
                  "d. Connect different devices together to form fast and efficient networks"],
      "answer": "d", "full_answer": "Connect different devices together to form fast and efficient networks"}, 
 
-    {"question": "126. A quel mot anglais correspond : A business strategy tool that identifies internal strengths and weaknesses, as well as external opportunities and threats, to guide strategic decision-making ?", 
+    {"question": "126. A quel mot anglais correspond : Business strategy tool that determines the options available in a strategic area of activity ?", 
     "options": ["a. Gap analysis", "b. SWOT analysis", "c. Value chain", "d. Risk mapping"], 
     "answer": "b", "full_answer": "SWOT analysis"}, 
 
@@ -571,39 +571,39 @@ questions = [
     "options": ["a. Balanced scorecard", "b. Business vision", "c. Master plan", "d. Strategic roadmap"], 
     "answer": "c", "full_answer": "Master plan"}, 
 
-    {"question": "128. A quel mot anglais correspond : A visual representation of the tasks within an organization's process and the order in which they occur ?", 
+    {"question": "128. A quel mot anglais correspond : Graphic representation of an organization's processes. It highlights the link between the tasks that make up the process and their sequence ?", 
     "options": ["a. Swimlane diagram", "b. Organizational chart", "c. Work breakdown structure", "d. Process mapping"], 
     "answer": "d", "full_answer": "Process mapping"}, 
 
-    {"question": "129. A quel mot anglais correspond : A software architecture model where applications are composed of distributed components with discovery, access control, data mapping, and security features ?", 
+    {"question": "129. A quel mot anglais correspond : A software development model based on distributed application components with discovery, access control, data mapping and security features ?", 
     "options": ["a. Agile design", "b. Cloud-native design", "c. Event-driven architecture", "d. Service-oriented architecture (SOA)"], 
     "answer": "d", "full_answer": "Service-oriented architecture (SOA)"}, 
 
-    {"question": "130. A quel mot anglais correspond : A cloud computing model where users can access and use an application over the internet without managing the underlying infrastructure ?", 
+    {"question": "130. A quel mot anglais correspond : A cloud service model where the user can access an app directly in rental mode ?", 
     "options": ["a. Infrastructure as a service (IaaS)", "b. Desktop as a service (DaaS)", "c. Software as a service (SaaS)", "d. Platform as a service (PaaS)"], 
     "answer": "c", "full_answer": "Software as a service (SaaS)"}, 
 
-    {"question": "131. A quel mot anglais correspond : A description of a sequence of actions carried out by a system in interaction with users or other systems to achieve a specific goal ?", 
+    {"question": "131. A quel mot anglais correspond : A set of actions carried out by the system in interaction with the actors for a purpose ?", 
     "options": ["a. Scenario", "b. Process model", "c. Use case", "d. Workflow"], 
     "answer": "c", "full_answer": "Use case"}, 
 
-    {"question": "132. A quel mot anglais correspond : A document that defines project boundaries, objectives, constraints, expected functionalities, deadlines, and budget ?", 
+    {"question": "132. A quel mot anglais correspond : A document that defines the framing of a project as a whole. Needs, objectives, constraints, expected functionalities, deadlines and budget are formalized in the most accurate way possible ?", 
     "options": ["a. Requirements baseline", "b. Project charter", "c. Feasibility study", "d. Scope statement"], 
     "answer": "d", "full_answer": "Scope statement"}, 
 
-    {"question": "133. A quel mot anglais correspond : A specific point marking the end of a project stage or significant task within project management ?", 
+    {"question": "133. A quel mot anglais correspond : In project management, is the end of a stage, the end of a job ?", 
     "options": ["a. Deliverable", "b. Task", "c. Milestone", "d. Sprint"], 
     "answer": "c", "full_answer": "Milestones"}, 
 
-    {"question": "134. A quel mot anglais correspond : The sequence of tasks whose total duration determines the minimum time required to complete a project ?", 
+    {"question": "134. A quel mot anglais correspond : Refers to the orderly list of operations necessary to achieve the desired result, the total duration of which gives the duration of the project ?", 
     "options": ["a. Program evaluation and review technique (PERT)", "b. Gantt chart", "c. Dependency matrix", "d. Critical path method (CPM)"], 
     "answer": "d", "full_answer": "Critical path method (CPM)"}, 
 
-    {"question": "135. A quel mot anglais correspond : A process to track project tasks and activities to ensure progress aligns with schedule and resources are used effectively ?", 
+    {"question": "135. A quel mot anglais correspond : Is to ensure that the project is proceeding in accordance with the established schedule and that human, material and financial resources are well defined and used wisely ?", 
     "options": ["a. Earned value analysis", "b. Status reporting", "c. Project progress monitoring", "d. Resource leveling"], 
     "answer": "c", "full_answer": "Project progress monitoring"}, 
 
-    {"question": "136. A quel mot anglais correspond : A group of individuals who can influence or be influenced by the outcome of a company's activities ?", 
+    {"question": "136. A quel mot anglais correspond : A group of individuals who can influence or be influenced by the achievement of a company's goals ?", 
     "options": ["a. Shareholders", "b. Sponsors", "c. Stakeholders", "d. Partners"], 
     "answer": "c", "full_answer": "Stakeholders"}, 
 
@@ -611,7 +611,7 @@ questions = [
     "options": ["a. Management group", "b. Project board", "c. Steering committee", "d. Governance team"], 
     "answer": "c", "full_answer": "Steering committee"}, 
 
-    {"question": "138. A quel mot anglais correspond : A formal, structured procedure for generating competing offers from different potential suppliers or contractors", 
+    {"question": "138. A quel mot anglais correspond : A formal, structured procedure for generating competing offers from different potential suppliers or contractors ?", 
     "options": ["a. Contract notice", "b. Invitation to tender (ITT)", "c. Request for proposal", "d. Bid request"], 
     "answer": "b", "full_answer": "Invitation to tender (ITT)"}, 
 
@@ -667,6 +667,10 @@ questions = [
 # Liste globale pour stocker les questions ratées
 questions_fausses = []
 
+def quiz_nouveaux_termes():
+    nouveaux = questions[125:]  # prend toutes les questions de la 126 jusqu'à la fin
+    run_quiz(nouveaux)
+
 def run_quiz(selected_questions, memorize_mistakes=True):
     score = 0
     global questions_fausses
@@ -705,7 +709,6 @@ def quiz_faux():
     else:
         print("Bravo ! Vous n'avez aucune question incorrecte à réviser.\n")
 
-# Menu interactif
 def menu():
     while True:
         print("Bienvenue au QCM interactif !")
@@ -713,8 +716,9 @@ def menu():
         print("2. Faire un quiz aléatoire")
         print("3. Refaire uniquement les questions ratées")
         print("4. Quitter")
+        print("5. Réviser les nouvelles questions (126 à 150)")
         
-        choix = input("Votre choix (1/2/3/4) : ")
+        choix = input("Votre choix (1/2/3/4/5) : ")
         
         if choix == "1":
             quiz_entier()
@@ -726,6 +730,8 @@ def menu():
         elif choix == "4":
             print("Merci d'avoir utilisé le QCM interactif !")
             break
+        elif choix == "5":
+            quiz_nouveaux_termes()
         else:
             print("Choix invalide.\n")
 
