@@ -224,7 +224,7 @@ questions = [
      "options": ["a. Protocol stack", "b. Protocol pile", "c. Protocol layers", "d. Stack of protocols"],
      "answer": "a", "full_answer": "Protocol stack"},
 
-    {"question": "51. A quel mot anglais correspond : Access management ?",
+    {"question": "51. A quel mot anglais correspond : Gestion des accès ?",
      "options": ["a. Admission management", "b. Access managing", "c. Access management", "d. Admittance management"],
      "answer": "c", "full_answer": "Access management"},
 
@@ -463,7 +463,7 @@ questions = [
                  "d. Analyze to what extent software, hardware and IT system meet company requirements"],
      "answer": "d", "full_answer": "Analyze to what extent software, hardware and IT system meet company requirements"},
 
-    {"question": "104. A quel mot anglais correspond : Data flow ?",
+    {"question": "104. A quel mot anglais correspond : Flux de données ?",
      "options": ["a. Data flux", "b. Figure flow", "c. Data flush", "d. Data flow"],
      "answer": "d", "full_answer": "Data flow"},
 
@@ -607,47 +607,47 @@ questions = [
     "options": ["a. Shareholders", "b. Sponsors", "c. Stakeholders", "d. Partners"], 
     "answer": "c", "full_answer": "Stakeholders"}, 
 
-    {"question": "137. A quel mot anglais correspond : A group of executives responsible for guiding a project's progress and ensuring proper governance within a company ?", 
+    {"question": "137. A quel mot anglais correspond : A group of executives responsible for ensuring the smooth running of a project within a company ?", 
     "options": ["a. Management group", "b. Project board", "c. Steering committee", "d. Governance team"], 
     "answer": "c", "full_answer": "Steering committee"}, 
 
-    {"question": "138. A quel mot anglais correspond : A formal procedure to solicit competitive offers from multiple suppliers or contractors ?", 
+    {"question": "138. A quel mot anglais correspond : A formal, structured procedure for generating competing offers from different potential suppliers or contractors", 
     "options": ["a. Contract notice", "b. Invitation to tender (ITT)", "c. Request for proposal", "d. Bid request"], 
     "answer": "b", "full_answer": "Invitation to tender (ITT)"}, 
 
-    {"question": "139. A quel mot anglais correspond : A method based on functional analysis that helps optimize economic choices by focusing on the essential needs of the customer ?", 
+    {"question": "139. A quel mot anglais correspond : Based on functional analysis, this technique allows to optimize choices from an economic perspective in order to limit itself to the necessary and to focus on the real needs of the customer ?", 
     "options": ["a. Lean method", "b. Functional design", "c. Cost reduction", "d. Value analysis"], 
     "answer": "d", "full_answer": "Value analysis"}, 
 
-    {"question": "140. A quel mot anglais correspond : An unpredictable event or circumstance that can affect a project or activity ?", 
+    {"question": "140. A quel mot anglais correspond : The unpredictable turn that an event can take ?", 
     "options": ["a. Risk", "b. Threat", "c. Issue", "d. Hazard"], 
     "answer": "d", "full_answer": "Hazard"}, 
 
-    {"question": "141. A quel mot anglais correspond : A partial or full representation of a system or object used to test and validate certain aspects or behavior ?", 
+    {"question": "141. A quel mot anglais correspond : A partial or complete representation of a system or object (existing or in project) in order to test and validate certain aspects and/or behavior (functional model) ?", 
     "options": ["a. Prototype", "b. Mock-up", "c. Simulation", "d. Blueprint"], 
     "answer": "b", "full_answer": "Mock-up"}, 
 
-    {"question": "142. A quel mot anglais correspond : A diagram showing responsibilities of team members for each task within a project ?", 
+    {"question": "142. A quel mot anglais correspond : a diagram that represents the responsibilities of each member for each task of a project ?", 
     "options": ["a. Organizational chart", "b. Organizational Breakdown Structure (OBS)", "c. RACI matrix", "d. Work breakdown structure"], 
     "answer": "b", "full_answer": "Organizational Breakdown Structure (OBS)"}, 
 
-    {"question": "143. A quel mot anglais correspond : An action that amends a document in progress by correcting, removing, or adding provisions ?", 
+    {"question": "143. A quel mot anglais correspond : An act by which an act in progress is amended by correcting, removing, or adding certain provisions ?", 
     "options": ["a. Endorsement", "b. Approval", "c. Amendment", "d. Validation"], 
     "answer": "a", "full_answer": "Endorsement"}, 
 
-    {"question": "144. A quel mot anglais correspond : A review process of a project with the team at multiple stages to evaluate progress and performance ?", 
+    {"question": "144. A quel mot anglais correspond : A reviewed with the entire team at several stages of the project, through intermediate evaluations and a final assessment ?", 
     "options": ["a. Project assessment", "b. Lessons learned", "c. Project review", "d. Audit"], 
     "answer": "a", "full_answer": "Project assessment"}, 
 
-    {"question": "145. A quel mot anglais correspond : An organization that implements practices to continuously learn and adapt to changes in its environment ?", 
+    {"question": "145. A quel mot anglais correspond : a human organization (business, administration, etc.) that implements a set of practices and arrangements to keep up with its ecosystem ?", 
     "options": ["a. Learning organization", "b. Smart business", "c. Agile organization", "d. Adaptive enterprise"], 
     "answer": "a", "full_answer": "Learning organization"}, 
 
-    {"question": "146. A quel mot anglais correspond : The entire network of processes, resources, and partners involved in delivering a product or service from raw materials to the end customer ?", 
+    {"question": "146. A quel mot anglais correspond : A represents the entire network that allows the delivery of products or services from raw materials to end customers ?", 
     "options": ["a. Logistics flow", "b. Supply chain", "c. Distribution system", "d. Value chain"], 
     "answer": "b", "full_answer": "Supply chain"}, 
 
-    {"question": "147. A quel mot anglais correspond : A systematic process of gathering information on new technologies and their commercial availability ?", 
+    {"question": "147. A quel mot anglais correspond : A systematic information about the latest techniques and especially about their commercial availability ?", 
     "options": ["a. Innovation scouting", "b. Technological watch", "c. Competitive intelligence", "d. R&D monitoring"], 
     "answer": "b", "full_answer": "Technological watch"}, 
 
@@ -655,11 +655,11 @@ questions = [
     "options": ["a. Agile", "b. VUCA", "c. SWOT", "d. Lean"], 
     "answer": "b", "full_answer": "VUCA"}, 
 
-    {"question": "149. A quel mot anglais correspond : The set of operations within an organization aimed at helping it adapt to internal or external changes ?", 
+    {"question": "149. A quel mot anglais correspond : The set of operations carried out within an organization to enable it to adapt to change and change in the environment ?", 
     "options": ["a. Organizational shift", "b. Change management", "c. Transformation process", "d. Transition planning"], 
     "answer": "b", "full_answer": "Change management"}, 
 
-    {"question": "150. A quel mot anglais correspond : The set of rules for distributing authority, tasks, control, and coordination within an organization ?", 
+    {"question": "150. A quel mot anglais correspond : An organization is all its rules for the distribution of authority, tasks, control and coordination ?", 
     "options": ["a. Corporate governance", "b. Organizational framework", "c. Organizational structure", "d. Management hierarchy"], 
     "answer": "c", "full_answer": "Organizational structure"}
     ]
